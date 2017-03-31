@@ -1,4 +1,4 @@
-#! /usr/bin
+#! /bin/bash
 
 FTP_GROUP=ftpgroup
 FTP_USER=youFtpUserNameHere
