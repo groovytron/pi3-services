@@ -1,6 +1,15 @@
 #!/bin/bash
 
-USERNAME=yourUserNameHere
+if [[ $# -ne 1 ]]; then
+    echo "Missing arguments. Please call it with './pi-setup myUserName' where myUserName is the name you want to give to the user that will replace the default pi user."
+    exit
+fi
+
+USERNAME=$1
+
+echo $USERNAME
+
+exit
 
 # Change root user password (default password is raspberry)
 sudo passwd root
